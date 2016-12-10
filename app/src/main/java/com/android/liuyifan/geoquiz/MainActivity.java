@@ -68,6 +68,12 @@ public class MainActivity extends Activity {
                 startActivity(new Intent(MainActivity.this,SmsActivity.class));
             }
         });
+        mProgressBar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this,SelfActivity.class));
+            }
+        });
     }
     private void changeQuestion(){
         question = mQuestion[mCurrentIndex].getTextResId();
