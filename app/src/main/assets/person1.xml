@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+    <person id = "11">
+        <name>Ssx解/n\n
+            析</name>
+        <age>18</age>
+    </person>
+    <person id = "13">
+        <name>XmL</name>
+        <age>43</age>
+    </person>
+</resources>

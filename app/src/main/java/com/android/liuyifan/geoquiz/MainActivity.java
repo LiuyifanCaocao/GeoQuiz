@@ -7,6 +7,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ProgressBar;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class MainActivity extends Activity {
     private Button mButton_yes;
@@ -52,6 +53,8 @@ public class MainActivity extends Activity {
             public void onClick(View v) {
                 mCurrentIndex = (mCurrentIndex + 1) % mQuestion.length;
                 changeQuestion();
+                Toast.makeText(MainActivity.this,"12",Toast.LENGTH_SHORT).show();
+
             }
         });
         mButton_back.setOnClickListener(new View.OnClickListener() {
@@ -109,4 +112,6 @@ public class MainActivity extends Activity {
         mProgressBar = (ProgressBar) findViewById(R.id.bar);
         mCirclePgBar = (CirclePgBar) findViewById(R.id.circlePgBar);
     }
+
+
 }
